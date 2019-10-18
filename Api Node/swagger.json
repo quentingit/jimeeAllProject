@@ -1,0 +1,12 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Outil G - Swagger Doc API",
+    "description": "documentation sur les routes API",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  }
+}

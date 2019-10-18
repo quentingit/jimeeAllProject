@@ -1,0 +1,43 @@
+{
+  "name": "jimee-api",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest --forceExit"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "cheerio": "^1.0.0-rc.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "delay": "^3.0.0",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "http-errors": "1.7.3",
+    "jade": "~1.11.0",
+    "jest": "^24.9.0",
+    "mariadb": "^2.1.1",
+    "morgan": "~1.9.0",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.7.0",
+    "node-oauth2-server": "^2.4.0",
+    "ow": "^0.6.0",
+    "p-retry": "^2.0.0",
+    "puppeteer": "^1.7.0",
+    "puppeteer-email": "^0.1.0",
+    "puppeteer-extra": "^2.0.7",
+    "puppeteer-extra-plugin-stealth": "^2.0.7",
+    "random": "^2.0.12",
+    "request": "^2.88.0",
+    "sequelize": "^5.18.3",
+    "supertest": "^4.0.2",
+    "swagger-jsdoc": "^1.3.0",
+    "swagger-ui-express": "^4.0.2",
+    "tweetnacl": "^1.0.1",
+    "tweetnacl-util": "^0.15.0"
+  },
+  "devDependencies": {
+    "dumper.js": "^1.3.1"
+  }
+}

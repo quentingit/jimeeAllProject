@@ -1,0 +1,498 @@
+{
+	"info": {
+		"_postman_id": "040a8675-b3bc-4b8a-815f-915582ef89d7",
+		"name": "Jimee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://exp.host/--/api/v2/push/send",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"to\": \"ExponentPushToken[AEugciMgYkh721lYqpFfAz]\",\r\n\t\"sound\": \"default\",\r\n\t\"title\": \"Title of the Notification\",\r\n\t\"body\": \"Body of your Notification\"\r\n}"
+				},
+				"url": {
+					"raw": "https://exp.host/--/api/v2/push/send",
+					"protocol": "https",
+					"host": [
+						"exp",
+						"host"
+					],
+					"path": [
+						"--",
+						"api",
+						"v2",
+						"push",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "testUsername",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "iAmATestPassword",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "null",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "null",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth enter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c20fa18c4fa520eb12e23b9d390d41ad5cf59d7b",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "user",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "pass",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "null",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "null",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "62.210.72.103:8001/restrictedArea/enter",
+					"host": [
+						"62",
+						"210",
+						"72",
+						"103"
+					],
+					"port": "8001",
+					"path": [
+						"restrictedArea",
+						"enter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/registerUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "user",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "pass",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "null",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "null",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/auth/registerUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"auth",
+						"registerUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/service",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "62.210.72.103:8001/service",
+					"host": [
+						"62",
+						"210",
+						"72",
+						"103"
+					],
+					"port": "8001",
+					"path": [
+						"service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "62.210.72.103:8001/info",
+					"host": [
+						"62",
+						"210",
+						"72",
+						"103"
+					],
+					"port": "8001",
+					"path": [
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "62.210.72.103:8001/users",
+					"host": [
+						"62",
+						"210",
+						"72",
+						"103"
+					],
+					"port": "8001",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "62.210.72.103:8001/configFollow",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "62.210.72.103:8001/configFollow",
+					"host": [
+						"62",
+						"210",
+						"72",
+						"103"
+					],
+					"port": "8001",
+					"path": [
+						"configFollow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "62.210.72.103:8001/configUserInsta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "62.210.72.103:8001/configUserInsta",
+					"host": [
+						"62",
+						"210",
+						"72",
+						"103"
+					],
+					"port": "8001",
+					"path": [
+						"configUserInsta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "62.210.72.103:8001/configUserInsta",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"likes\": 1,\n    \"comments\": 0,\n    \"follows\": 1,\n    \"unfollows\": 0\n}"
+				},
+				"url": {
+					"raw": "62.210.72.103:8001/configUserInsta",
+					"host": [
+						"62",
+						"210",
+						"72",
+						"103"
+					],
+					"port": "8001",
+					"path": [
+						"configUserInsta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "62.210.72.103:8001/tagLikes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "62.210.72.103:8001/tagLikes",
+					"host": [
+						"62",
+						"210",
+						"72",
+						"103"
+					],
+					"port": "8001",
+					"path": [
+						"tagLikes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "62.210.72.103:8001/tagComments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "62.210.72.103:8001/tagLikes",
+					"host": [
+						"62",
+						"210",
+						"72",
+						"103"
+					],
+					"port": "8001",
+					"path": [
+						"tagLikes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "62.210.72.103:8001/userLogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "62.210.72.103:8001/userLogs",
+					"host": [
+						"62",
+						"210",
+						"72",
+						"103"
+					],
+					"port": "8001",
+					"path": [
+						"userLogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "62.210.72.103:8001/instaAccounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "62.210.72.103:8001/instaAccounts",
+					"host": [
+						"62",
+						"210",
+						"72",
+						"103"
+					],
+					"port": "8001",
+					"path": [
+						"instaAccounts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

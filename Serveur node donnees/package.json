@@ -1,0 +1,27 @@
+{
+  "name": "jimee-serveur-recherche-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serveur.js",
+  "scripts": {
+    "start": "node serveur.js",
+    "test": "jest --forceExit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.16.0",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "http-errors": "1.7.3",
+    "jade": "~1.11.0",
+    "jest": "^24.9.0",
+    "mariadb": "^2.1.1",
+    "morgan": "~1.9.0",
+    "mysql2": "^1.7.0",
+    "puppeteer": "^1.7.0",
+    "puppeteer-email": "^0.1.0",
+    "puppeteer-extra": "^2.0.7",
+    "puppeteer-extra-plugin-stealth": "^2.0.7"
+  }
+}

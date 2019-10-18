@@ -1,0 +1,46 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "rnpm": {
+    "assets": [
+      "./assets/fonts/"
+    ]
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject",
+    "test": "node ./node_modules/jest/bin/jest.js --watchAll"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "@expo/samples": "2.1.1",
+    "@ptomasroos/react-native-multi-slider": "^1.0.0",
+    "@react-native-community/slider": "^1.1.4",
+    "expo": "^33.0.0",
+    "expo-linear-gradient": "~5.0.1",
+    "fetch-timeout": "0.0.2",
+    "node-fetch": "^2.6.0",
+    "react": "16.5.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
+    "react-native-MultiSlider": "^0.2.1",
+    "react-native-chart-kit": "^3.0.1",
+    "react-native-drawer": "^2.5.1",
+    "react-native-elements": "^1.1.0",
+    "react-native-maps": "^0.23.0",
+    "react-native-multi-slider": "^0.3.6",
+    "react-native-range-slider": "^0.1.2",
+    "react-native-side-drawer": "^1.1.7",
+    "react-native-simple-radio-button": "^2.7.4",
+    "react-native-switch-selector": "^1.1.14",
+    "react-navigation": "^3.0.9",
+    "rn-range-slider": "^1.2.4"
+  },
+  "devDependencies": {
+    "babel-preset-expo": "^5.0.0",
+    "jest-expo": "^32.0.0"
+  },
+  "private": true
+}
